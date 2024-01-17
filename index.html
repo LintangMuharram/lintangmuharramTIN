@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daftar Buku</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Daftar Buku</h1>
+<nav>
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="tambah.php">Tambah Buku</a></li>
+<li><a href="tambah_anggota.php">Tambah Anggota</a></li>
+<li><a href="tambah_peminjaman.php">Tambah Transaksi
+
+Peminjaman</a></li>
+</ul>
+</nav>
+</header>
+<section>
+<!-- Formulir Pencarian -->
+<form action="index.php" method="GET" class="search-form">
+<div class="search-container">
+<input type="text" id="search" name="search" placeholder="Judul
+Buku" value="<?php echo isset($_GET['search']) ? $_GET['search'] : ''; ?>">
+
+</div>
+<button type="submit">Cari</button>
+</form>
+
+<!-- Tabel Daftar Buku -->
+<table class="responsive-table">
+<tr>
+<th>ID Buku</th>
+<th>Judul</th>
+<th>Pengarang</th>
+<th>Tahun Terbit</th>
+<th>Aksi</th>
+</tr>
+
+</script>
+</body>
+</html>
